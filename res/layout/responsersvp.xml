@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+   	android:paddingLeft="10dip"
+   	android:paddingRight="10dip"
+   	android:paddingBottom="10dip">
+   	
+    <TextView
+		android:id="@+id/question_text"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:textSize="20sp"
+		android:textStyle="bold"/>
+	<ToggleButton
+		android:id="@+id/rsvp_me_button"
+		android:textOn="@string/responsersvp.rsvp_me_title"
+		android:textOff="@string/responsersvp.rsvp_me_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+	<LinearLayout	
+	    android:orientation="horizontal"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+		<ToggleButton
+			android:id="@+id/rsvp_plus_button"
+			android:textOn="@string/responsersvp.rsvp_plus_title"
+			android:textOff="@string/responsersvp.rsvp_plus_title"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="3"/>
+		<EditText 
+		    android:id="@+id/rsvp_plus_text"
+   			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:inputType="number"
+			android:layout_weight="1"/>
+	</LinearLayout>
+	<ToggleButton
+		android:id="@+id/rsvp_no_button"
+		android:textOn="@string/responsersvp.rsvp_no_title"
+		android:textOff="@string/responsersvp.rsvp_no_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+	<!-- <LinearLayout	
+	    android:orientation="horizontal"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+		<Button
+			android:id="@+id/results_list_button"
+			android:text="@string/responsersvp.results_list_title"
+			android:layout_width="95dip"
+			android:layout_height="60dip"
+			android:visibility="gone"/>
+		<Button
+			android:id="@+id/results_summary_button"
+			android:text="@string/responsersvp.results_summary_title"
+			android:layout_width="95dip"
+			android:layout_height="60dip"
+			android:visibility="gone"/>
+	</LinearLayout> -->
+</LinearLayout>

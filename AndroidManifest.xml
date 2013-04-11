@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="k11.pushpull"
+    android:versionCode="5"
+    android:versionName="1.4" >
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission android:name="k11.pushpull.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="k11.pushpull.permission.C2D_MESSAGE" /> 
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
+
+    <application
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:name=".PushPullApplication" 
+        android:theme="@style/Theme.Sherlock">
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND" >
+		  	<intent-filter>
+			    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+			    <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+			    <category android:name="k11.pushpull" />
+		  	</intent-filter>
+		</receiver>
+		<service android:name=".GCMIntentService" />
+        <activity
+            android:name=".Activities.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Login"
+        	android:label="@string/login.title"
+        	android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity android:name=".Activities.NewUser"
+        	android:label="@string/newuser.title"
+        	android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity android:name=".Activities.PollView"
+        	android:label="@string/pollview.title">
+        </activity>
+        <activity android:name=".Activities.PollList"
+        	android:label="@string/polllist.title">
+        </activity>
+        <activity android:name=".Activities.ResponseList"
+        	android:label="@string/responselist.title">
+        </activity>
+        <activity android:name=".Activities.ResponseView"
+        	android:label="@string/responseview.title">
+        </activity>
+        <activity android:name=".Activities.Preferences"
+        	android:label="@string/preferences.title">
+        </activity>
+        <activity android:name=".Activities.OauthNewUser"
+        	android:label="@string/oauthnewuser.title"
+        	android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity android:name=".Activities.Friends"
+        	android:label="@string/friends.title">
+        </activity>
+        <activity android:name=".Activities.GroupView"
+        	android:label="@string/groupview.title">
+        </activity>
+    </application>
+
+</manifest>

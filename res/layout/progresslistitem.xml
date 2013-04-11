@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+		<ImageView 
+		    android:id="@+id/delete"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/ic_delete"
+	        android:contentDescription="@string/polloptions.delete_description"
+	        android:layout_alignParentRight="true" 
+	        android:layout_centerVertical="true"
+	        android:visibility="gone"/>
+	    <ProgressBar 
+	        android:id="@+id/bar"
+	        style="@android:style/Widget.ProgressBar.Horizontal"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:max="10"
+			android:layout_toLeftOf="@id/delete"
+			android:layout_centerVertical="true"/>
+    </RelativeLayout>
+	<TextView
+        android:id="@+id/caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

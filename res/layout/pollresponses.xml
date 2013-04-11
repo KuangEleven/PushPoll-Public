@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   	android:paddingLeft="10dip"
+   	android:paddingRight="10dip"
+   	android:paddingBottom="10dip">
+	<ListView
+	    android:id="@+id/responses_listview"
+	    android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_alignParentTop="true" />
+	<LinearLayout
+	    android:id="@+id/responses_add"	
+	    android:orientation="horizontal"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent"
+    	android:layout_below="@id/responses_listview"
+    	android:layout_alignParentLeft="true">
+    	<AutoCompleteTextView 
+    	    android:id="@+id/addperson_text"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="0dp"
+    	    android:layout_weight="5"
+    	    android:inputType="textEmailAddress"
+    	    android:completionThreshold="1"/>
+    	<Button 
+    	    android:id="@+id/addperson_button"
+    	    android:text="@string/pollresponses.addperson_label"
+       	    android:layout_height="wrap_content"
+    	    android:layout_width="0dp"
+    	    android:layout_weight="1"/>
+   	</LinearLayout>
+   	<Button 
+        android:id="@+id/next_button"
+        android:text="@string/poll.next"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   	android:paddingLeft="10dip"
+   	android:paddingRight="10dip"
+   	android:paddingBottom="10dip">
+   	
+    <ProgressBar 
+        android:id="@+id/rsvpsummary_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="10dip"
+		android:layout_alignParentTop="true"/>
+    <TextView
+		android:id="@+id/pollrsvpsummary_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingRight="5dip"
+		android:layout_below="@id/rsvpsummary_progress"
+		android:layout_alignParentLeft="true"/>
+	<TextView
+	    android:text="@string/pollrsvpsummary.responses_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/pollrsvpsummary_text"
+		android:layout_alignBaseline="@id/pollrsvpsummary_text"/>
+  	<TextView
+		android:id="@+id/total_text"
+		android:textSize="48sp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/pollrsvpsummary_text"
+		android:layout_alignParentLeft="true"/>
+  	<TextView
+	  	android:text="@string/pollrsvpsummary.total_text"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/total_text"
+		android:layout_alignParentLeft="true"/>
+</RelativeLayout>

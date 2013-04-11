@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10dip" >
+	<Button
+		android:id="@+id/oauth_button"
+		android:text="@string/login.oauth_title"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+   	<LinearLayout
+   		android:orientation="horizontal"
+   		android:layout_height="wrap_content"
+   		android:layout_width="fill_parent">
+   		<!--  <TextView
+   			android:text="@string/login.email_title"
+   			android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"/> -->
+   		<EditText
+   		    android:hint="@string/login.email_title"
+   			android:id="@+id/email_text"
+			android:layout_width="250dip"
+			android:layout_height="wrap_content"
+			android:inputType="textEmailAddress"/>
+	</LinearLayout>
+	<LinearLayout
+   		android:orientation="horizontal"
+   		android:layout_height="wrap_content"
+   		android:layout_width="fill_parent">
+   		<!-- <TextView
+   			android:text="@string/login.password_title"
+   			android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"/> -->
+   		<EditText
+   		    android:hint="@string/login.password_title"
+   			android:id="@+id/password_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textPassword"/>
+	</LinearLayout>
+	<LinearLayout
+	    android:orientation="horizontal"
+   		android:layout_height="wrap_content"
+   		android:layout_width="fill_parent">
+		<Button
+			android:id="@+id/login_button"
+			android:text="@string/login.login_title"
+			android:layout_height="wrap_content"
+			android:layout_width="0px"
+			android:layout_weight="1"/>
+		<Button
+			android:id="@+id/newuser_button"
+			android:text="@string/login.newuser_title"
+			android:layout_height="wrap_content"
+			android:layout_width="0px"
+			android:layout_weight="1"/>
+	</LinearLayout>
+</LinearLayout>

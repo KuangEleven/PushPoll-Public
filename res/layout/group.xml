@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+   	android:paddingLeft="10dip"
+   	android:paddingRight="10dip"
+   	android:paddingBottom="10dip">
+   	<LinearLayout
+   	    android:orientation="horizontal"
+   	    android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+    	<TextView
+    	    android:id="@+id/group_title"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="5"
+    	    android:textAppearance="?android:attr/textAppearanceLarge" />
+    	<ImageButton
+    	    android:id="@+id/title_button"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:src="@drawable/ic_menu_edit" />
+    </LinearLayout>
+	<ListView
+	    android:id="@+id/list"
+	    android:layout_height="wrap_content"
+		android:layout_width="fill_parent" />
+	<LinearLayout
+	    android:id="@+id/group_add"	
+	    android:orientation="horizontal"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+    	<AutoCompleteTextView 
+    	    android:id="@+id/addperson_text"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="0dp"
+    	    android:layout_weight="5"
+    	    android:inputType="textEmailAddress"
+    	    android:completionThreshold="1"/>
+    	<Button 
+    	    android:id="@+id/addperson_button"
+    	    android:text="@string/pollresponses.addperson_label"
+       	    android:layout_height="wrap_content"
+    	    android:layout_width="0dp"
+    	    android:layout_weight="1"/>
+   	</LinearLayout>
+</LinearLayout>

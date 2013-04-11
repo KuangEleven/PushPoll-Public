@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+   	android:paddingLeft="10dip"
+   	android:paddingRight="10dip"
+   	android:paddingBottom="10dip">
+	<ListView
+	    android:id="@+id/listview"
+	    android:layout_height="wrap_content"
+		android:layout_width="fill_parent" />
+	<LinearLayout
+	    android:orientation="horizontal"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+    	<EditText 
+    	    android:id="@+id/addperson_text"
+    	    android:layout_height="wrap_content"
+    	    android:layout_width="0dp"
+    	    android:layout_weight="5"
+    	    android:inputType="textEmailAddress"/>
+    	<Button 
+    	    android:id="@+id/addperson_button"
+    	    android:text="@string/friendlist.addperson_label"
+       	    android:layout_height="wrap_content"
+    	    android:layout_width="0dp"
+    	    android:layout_weight="1"/>
+   	</LinearLayout>
+</LinearLayout>

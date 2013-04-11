@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+   	android:paddingLeft="10dip"
+   	android:paddingRight="10dip"
+   	android:paddingBottom="10dip">
+   	
+    <TextView
+		android:id="@+id/question_text"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:textSize="20sp"
+		android:textStyle="bold"/>
+	<EditText
+	    android:id="@+id/response_text"
+	    android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:lines="3"
+		android:inputType="textMultiLine"
+		android:gravity="top"/>
+	<!-- <Button
+		android:id="@+id/results_list_button"
+		android:text="@string/responsetext.results_list_title"
+		android:layout_width="200dip"
+		android:layout_height="wrap_content"
+		android:visibility="gone"/>
+	<Button
+		android:id="@+id/submit_button"
+		android:text="@string/responsetext.submit_title"
+		android:layout_width="200dip"
+		android:layout_height="wrap_content"/> -->
+</LinearLayout>

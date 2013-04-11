@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+   	android:paddingLeft="10dip"
+   	android:paddingRight="10dip"
+   	android:paddingBottom="10dip">
+   	
+    <TextView
+		android:id="@+id/question_text"
+		android:layout_height="fill_parent"
+		android:layout_width="200dip"
+		android:textSize="20sp"
+		android:textStyle="bold"/>
+	<ListView
+	    android:id="@+id/listview"
+	    android:layout_height="wrap_content"
+		android:layout_width="fill_parent"/>
+	<!--  <LinearLayout	
+	    android:orientation="horizontal"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent">
+		<Button
+			android:id="@+id/results_list_button"
+			android:text="@string/responsemultiselect.results_list_title"
+			android:layout_width="95dip"
+			android:layout_height="60dip"
+			android:visibility="gone"/>
+		<Button
+			android:id="@+id/results_summary_button"
+			android:text="@string/responsemultiselect.results_summary_title"
+			android:layout_width="95dip"
+			android:layout_height="60dip"
+			android:visibility="gone"/>
+	</LinearLayout>
+	<Button
+		android:id="@+id/submit_button"
+		android:text="@string/responsemultiselect.submit_title"
+		android:layout_width="200dip"
+		android:layout_height="wrap_content"/> -->
+</LinearLayout>

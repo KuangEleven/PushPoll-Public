@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   	android:paddingLeft="10dip"
+   	android:paddingRight="10dip"
+   	android:paddingBottom="10dip">
+   	
+    <EditText
+		android:id="@+id/question_text"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:lines="4"
+		android:inputType="textMultiLine"
+		android:hint="@string/pollproperties.question_hint"
+		android:gravity="top"
+		android:layout_alignParentTop="true" />
+    <Spinner
+	    android:id="@+id/polltype_spinner"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/question_text"
+	    android:layout_alignParentLeft="true" />
+    <CheckBox
+        android:id="@+id/shareresults_check"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/polltype_spinner"
+        android:layout_alignParentLeft="true" />
+    <TextView 
+        android:text="@string/pollproperties.shareresults_label"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/polltype_spinner"
+        android:layout_toRightOf="@id/shareresults_check"
+        android:layout_alignBaseline="@id/shareresults_check" />
+    <Button 
+        android:id="@+id/next_button"
+        android:text="@string/poll.next"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>	

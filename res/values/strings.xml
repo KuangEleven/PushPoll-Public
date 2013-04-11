@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PushPoll</string>
+    
+    <string name="main.title">PushPoll</string>
+    <string name="main.responses_title">Responses</string>
+    <string name="main.polls_title">Manage Polls</string>
+    <string name="main.options_title">Options</string>
+    <string name="main.logout_title">Logout</string>
+    <string name="main.friends_title">Address Book</string>
+    <string name="main.website_title">Website</string>
+    <string name="main.user_title">User:</string>
+    
+    <string name="login.title">Login</string>
+    <string name="login.email_title">Email</string>
+    <string name="login.password_title">Password</string>
+    <string name="login.login_title">Login</string>
+    <string name="login.newuser_title">New User</string>
+    <string name="login.oauth_title">Google Login (Gmail addresses only)</string>
+    
+    <string name="newuser.title">New User</string>
+    <string name="newuser.name_title">Full Name</string>
+    <string name="newuser.email_title">Email Address</string>
+    <string name="newuser.password_title">Password</string>
+    <string name="newuser.passwordverify_title">Re-enter</string>
+    <string name="newuser.create_title">Create</string>
+    
+    <string name="responselist.title">Responses</string>
+    <string name="responselist.more">More...</string>
+    
+    <string name="responseview.title">Response</string>
+    
+    <string name="responsespending.tabtitle">Pending</string>
+    <string name="responsescompleted.tabtitle">Completed</string>
+    
+    <string name="response.tabtitle">Response</string>
+    <string name="responsesummary.tabtitle">Summary</string>
+    <string name="responsesresultslist.tabtitle">Results List</string>
+    
+    <string name="responsespending.title">Pending Responses</string>
+    <string name="responsescompleted.title">Completed Responses</string>
+    
+    <string name="responsersvp.title">Response</string>
+    <string name="responsersvp.rsvp_me_title">RSVP Me</string>
+    <string name="responsersvp.rsvp_plus_title">RSVP Me +</string>
+    <string name="responsersvp.rsvp_no_title">Not Coming</string>
+    <string name="responsersvp.results_list_title">Results List</string>
+    <string name="responsersvp.results_summary_title">Results Summary</string>
+    
+    <string name="responsetext.title">Response</string>
+    <string name="responsetext.submit_title">Submit</string>
+    <string name="responsetext.results_list_title">Results List</string>
+    
+    <string name="responsemultiselect.submit_title">Submit</string>
+    <string name="responsemultiselect.results_list_title">Results List</string>
+    <string name="responsemultiselect.results_summary_title">Results Summary</string>
+    
+    <string name="responsesingleselect.results_list_title">Results List</string>
+    <string name="responsesingleselect.results_summary_title">Results Summary</string>
+    
+    <string name="resultslist.title">Poll Results</string>
+    
+    <string name="resultssummaryrsvp.title">Poll Summary</string>
+    <string name="resultssummaryrsvp.total_text">Total</string>
+    <string name="resultssummaryrsvp.responses_text"> Responses</string>
+    
+    <string name="resultssummaryselect.title">Poll Summary</string>
+    <string name="resultssummaryselect.responses_text"> Responses</string>
+    
+    <string name="pollview.title">Poll</string>
+    <string name="pollview.menu_activate">Activate</string>
+    <string name="pollview.menu_delete">Delete</string>
+    
+    <string name="pollproperties.tabtitle">Properties</string>
+    <string name="pollproperties.question_hint">Question</string>
+    <string name="pollproperties.shareresults_label">Share Results</string>
+    
+    <string-array name="poll_type">
+        <item>RSVP</item>
+        <item>Select One</item>
+        <item>Select Many</item>
+        <item>Short Text</item>
+    </string-array>
+    
+    <string name="polloptions.tabtitle">Options</string>
+    <string name="polloptions.addoption_label">Add</string>
+    <string name="polloptions.responses_text">  Responses</string>
+    <string name="polloptions.delete_description">Delete</string>
+    
+    <string name="pollresponses.tabtitle">People</string>
+    <string name="pollresponses.addperson_label">Add</string>
+    <string name="pollresponses.nullresponse">(No Response)</string>
+    <string name="pollresponses.nulluser">Unregistered User</string>
+    <string name="pollresponses.rsvpyesresponse">Yes</string>
+    <string name="pollresponses.rsvpguestresponse">guest</string>
+    <string name="pollresponses.rsvpguestsresponse">guests</string>
+    <string name="pollresponses.rsvpnoresponse">No</string>
+    
+    <string name="pollrsvpsummary.tabtitle">Summary</string>
+    <string name="pollrsvpsummary.responses_text"> Responses</string>
+    <string name="pollrsvpsummary.total_text">Total</string>
+    
+    <string name="polllist.title">Polls</string>
+    <string name="polllist.menu_new">New</string>
+    <string name="polllist.more">More...</string>
+    <string name="pollsdraft.tabtitle">Draft</string>
+    <string name="pollsactive.tabtitle">Active</string>
+    <string name="pollscompleted.tabtitle">Completed</string>
+    
+    <string name="preferences.title">Options</string>
+    <string name="pref_notifications">Notifications</string>
+    <string name="pref_notifications_summ">Enable Android notifications when a response is requested.</string>
+    
+    <string name="oauthnewuser.title">New Google Auth Account</string>
+    <string name="oauthnewuser.name_hint">Name</string>
+    <string name="oauthnewuser.create_title">Create Account</string>
+    
+    <string name="friends.title">Friends</string>
+    <string name="friends.tabtitle">Friends</string>
+    <string name="groups.tabtitle">Groups</string>
+    
+    <string name="friendlist.addperson_label">Add</string>
+    
+    <string name="autosuggest.image_description">Contact Type</string>
+    
+    <string name="groupview.title">Group</string>
+    
+    <string name="namedialog.hint">Name</string>
+    <string name="namedialog.title">New Group</string>
+    <string name="namedialog.Accept">Set Name</string>
+    <string name="namedialog.Cancel">Cancel</string>
+    
+    <string name="deletedialog.text">Are you sure you want to delete?</string>
+    <string name="deletedialog.accept">Delete</string>
+    <string name="deletedialog.cancel">Cancel</string>
+    
+    <string name="newuserdialog.title">New User Created</string>
+    <string name="newuserdialog.text">Check your inbox to confirm your email address, then come back here to login and start using Push Poll!</string>
+    <string name="newuserdialog.accept">OK</string>
+    
+    <string name="poll.next">Next</string>
+    
+    <string name="polldialog_title">New Poll</string>
+    <string name="polldialog_Accept">Create</string>
+    <string name="polldialog_Cancel">Cancel</string>
+</resources>
